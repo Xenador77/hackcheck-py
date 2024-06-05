@@ -64,6 +64,8 @@ class SearchResponse:
     databases: int
     results: list[SearchResult]
     pagination: SearchResponsePagination | None
+    first_seen: str
+    last_seen: str
 
 
 SearchFilter = NewType("SearchFilter", str)
